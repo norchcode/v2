@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Planet - Curating Excellence in Open Source</title>
+    <meta name="description" content="Discovering and showcasing meaningful developer tools with proper attribution and community support. Explore ChartDB, Ladder, Magic Resume and more.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+        <div class="morphing-bg"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        <div class="particles-system">
+            <div class="particle-burst"></div>
+            <canvas id="particle-canvas"></canvas>
+        </div>
+        <div class="gradient-mesh"></div>
+        <div class="magnetic-field"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-explosion"></div>
+                <h1 class="hero-title" id="hero-title">
+                    <span class="char">C</span><span class="char">o</span><span class="char">d</span><span class="char">e</span>
+                    <span class="char"> </span>
+                    <span class="char">P</span><span class="char">l</span><span class="char">a</span><span class="char">n</span><span class="char">e</span><span class="char">t</span>
+                </h1>
+                <p class="hero-tagline" id="hero-tagline">Curating Excellence in Open Source</p>
+                <p class="hero-subtitle" id="hero-subtitle">Discovering and showcasing meaningful developer tools with proper attribution and community support</p>
+                <div class="hero-actions" id="hero-actions">
+                    <button class="btn btn-primary btn-morph" data-scroll-to="projects">
+                        <span class="btn-text">Explore Projects</span>
+                        <div class="btn-liquid"></div>
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M13 7l5 5-5 5M6 7l5 5-5 5" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-secondary btn-morph" data-scroll-to="about">
+                        <span class="btn-text">Learn More</span>
+                        <div class="btn-liquid"></div>
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hero-stats" id="hero-stats">
+                    <div class="stat" data-target="25900">
+                        <span class="stat-number">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">GitHub Stars</span>
+                    </div>
+                    <div class="stat" data-target="3">
+                        <span class="stat-number">0</span>
+                        <span class="stat-suffix"></span>
+                        <span class="stat-label">Featured Projects</span>
+                    </div>
+                    <div class="stat" data-target="10000">
+                        <span class="stat-number">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Monthly Visitors</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Active</span>
+                        <span class="stat-suffix"></span>
+                        <span class="stat-label">Curation</span>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" id="projects-title">
+                <span class="word">Featured</span>
+                <span class="word">Projects</span>
+            </h2>
+            <p class="section-subtitle" id="projects-subtitle">Discover powerful open source tools curated with care and proper attribution</p>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- ChartDB -->
+                <div class="project-card" data-project="chartdb">
+                    <div class="project-bg-morph"></div>
+                    <div class="project-header">
+                        <h3 class="project-name">ChartDB</h3>
+                        <div class="project-meta">
+                            <span class="project-stars">⭐ 18.7k</span>
+                            <span class="project-license">AGPL-3.0</span>
+                        </div>
+                    </div>
+                    <p class="project-tagline">Instant Database Visualization</p>
+                    <p class="project-description">Transform database schemas into beautiful diagrams with a single query. AI-powered migration with professional visualization.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">D3.js</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://chartdb.codeplanet.qzz.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-morph">
+                            <span class="btn-text">Try Demo</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                        <a href="https://github.com/chartdb/chartdb" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-morph">
+                            <span class="btn-text">View Source</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                    </div>
+                    <div class="project-attribution">
+                        <p>Originally created by <a href="https://chartdb.io" target="_blank">ChartDB Team</a></p>
+                    </div>
+                </div>
+
+                <!-- Ladder -->
+                <div class="project-card" data-project="ladder">
+                    <div class="project-bg-morph"></div>
+                    <div class="project-header">
+                        <h3 class="project-name">Ladder</h3>
+                        <div class="project-meta">
+                            <span class="project-stars">⭐ 5.2k</span>
+                            <span class="project-license">GPL-3.0</span>
+                        </div>
+                    </div>
+                    <p class="project-tagline">Information Freedom Proxy</p>
+                    <p class="project-description">Self-hosted solution for accessing information with privacy and control. Customizable rulesets with Docker deployment.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">YAML</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://lad.codeplanet.qzz.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-morph">
+                            <span class="btn-text">Try Demo</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                        <a href="https://github.com/everywall/ladder" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-morph">
+                            <span class="btn-text">View Source</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                    </div>
+                    <div class="project-attribution">
+                        <p>Originally created by <a href="https://github.com/everywall/ladder" target="_blank">Everywall</a></p>
+                    </div>
+                </div>
+
+                <!-- Magic Resume -->
+                <div class="project-card" data-project="resume">
+                    <div class="project-bg-morph"></div>
+                    <div class="project-header">
+                        <h3 class="project-name">Magic Resume</h3>
+                        <div class="project-meta">
+                            <span class="project-stars">⭐ 1.8k</span>
+                            <span class="project-license">Apache-2.0</span>
+                        </div>
+                    </div>
+                    <p class="project-tagline">AI-Powered Career Builder</p>
+                    <p class="project-description">Create stunning resumes with intelligent suggestions and real-time preview. AI content generation with professional templates.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://resume.codeplanet.qzz.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-morph">
+                            <span class="btn-text">Try Demo</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                        <a href="https://github.com/JOYCEQL/magic-resume" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-morph">
+                            <span class="btn-text">View Source</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                    </div>
+                    <div class="project-attribution">
+                        <p>Originally created by <a href="https://magicv.art" target="_blank">JOYCEQL</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" id="about-title">
+                        <span class="word">About</span>
+                        <span class="word">Code</span>
+                        <span class="word">Planet</span>
+                    </h2>
+                    <p class="about-mission" id="about-mission">Code Planet bridges the gap between brilliant open source projects and the developers who need them through thoughtful curation and discovery, ensuring both users and creators benefit from innovative tools.</p>
+                </div>
+                
+                <div class="values-grid" id="values-grid">
+                    <div class="value-card" data-index="0">
+                        <div class="value-bg-morph"></div>
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Quality Curation</h3>
+                        <p>Handpicked tools that solve real problems and make development more efficient</p>
+                    </div>
+                    <div class="value-card" data-index="1">
+                        <div class="value-bg-morph"></div>
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Proper Attribution</h3>
+                        <p>Full credit and direct links to original creators, supporting the open source community</p>
+                    </div>
+                    <div class="value-card" data-index="2">
+                        <div class="value-bg-morph"></div>
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Community Focus</h3>
+                        <p>Building bridges between users and developers to foster collaboration and growth</p>
+                    </div>
+                    <div class="value-card" data-index="3">
+                        <div class="value-bg-morph"></div>
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Discovery First</h3>
+                        <p>Making exceptional tools easy to find, understand, and integrate into workflows</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" id="contact-title">
+                <span class="word">Get</span>
+                <span class="word">In</span>
+                <span class="word">Touch</span>
+            </h2>
+            <p class="section-subtitle" id="contact-subtitle">Connect with Code Planet and discover more amazing projects</p>
+            
+            <div class="contact-content">
+                <div class="contact-info" id="contact-info">
+                    <h3>Curated by norchcode</h3>
+                    <p>Every great developer deserves access to exceptional tools. I discover, evaluate, and showcase open source projects that solve real problems, making them easy to find while ensuring original creators receive proper recognition and community support.</p>
+                    
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/achmad-norcholis/" target="_blank" rel="noopener noreferrer" class="contact-link btn-morph">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                        <a href="https://github.com/norchcode" target="_blank" rel="noopener noreferrer" class="contact-link btn-morph">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-cta" id="contact-cta">
+                    <div class="cta-card">
+                        <div class="cta-bg-morph"></div>
+                        <h3>Have a Project to Suggest?</h3>
+                        <p>Found an amazing open source tool that deserves to be featured? Let's discuss adding it to Code Planet's curated collection.</p>
+                        <a href="https://www.linkedin.com/in/achmad-norcholis/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-morph">
+                            <span class="btn-text">Start a Conversation</span>
+                            <div class="btn-liquid"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Code Planet</h3>
+                    <p>Curating Excellence in Open Source</p>
+                    <p>All featured projects maintain full attribution to their original creators and comply with their respective open source licenses.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projects</h4>
+                        <a href="https://chartdb.codeplanet.qzz.io" target="_blank">ChartDB</a>
+                        <a href="https://lad.codeplanet.qzz.io" target="_blank">Ladder</a>
+                        <a href="https://resume.codeplanet.qzz.io" target="_blank">Magic Resume</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <a href="https://www.linkedin.com/in/achmad-norcholis/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/norchcode" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Code Planet. Curating with attribution and respect for open source creators.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Magnetic Cursor -->
+    <div class="magnetic-cursor">
+        <div class="cursor-inner"></div>
+        <div class="cursor-outer"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
